@@ -120,6 +120,16 @@ src/
 - **TypeScript** - Type safety and developer experience
 - **Zod** - Schema validation
 
+## Security Notes
+
+⚠️ **Important**: The AI streaming endpoint (`/api/stream-object`) includes basic input validation but is intended for demonstration purposes. For production use, you should:
+
+1. Add authentication (e.g., API keys, JWT tokens)
+2. Implement rate limiting to prevent abuse
+3. Add monitoring and logging
+4. Consider using Vercel's edge config or middleware for access control
+5. Set up usage limits for the OpenAI API
+
 ## License
 
 MIT
