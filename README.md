@@ -105,7 +105,7 @@ src/
 │   ├── server.ts          # Server-side i18n setup
 │   ├── en.ts              # English translations
 │   └── fr.ts              # French translations
-└── middleware.ts          # I18n middleware
+└── proxy.ts               # I18n proxy (Next.js 16 convention)
 ```
 
 ## Technologies Used
