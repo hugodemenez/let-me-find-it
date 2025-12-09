@@ -1,6 +1,12 @@
 import type { Metadata } from 'next'
 import '../globals.css'
 import { ClientProvider } from '@/components/ClientProvider'
+import { Inter } from 'next/font/google'
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
 
 export const metadata: Metadata = {
   title: 'Let Me Find It',
@@ -18,7 +24,7 @@ export default async function RootLayout({
   
   return (
     <html lang={locale}>
-      <body className="font-sans antialiased">
+      <body className={`${inter.variable} font-sans antialiased bg-cream text-stone-800 selection:bg-indigo-100 selection:text-indigo-900`}>
         <ClientProvider locale={locale}>
           {children}
         </ClientProvider>
